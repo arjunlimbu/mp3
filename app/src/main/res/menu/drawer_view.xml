@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_song"
+            android:title="Song" />
+        <item
+            android:id="@+id/nav_album"
+            android:title="Album" />
+        <item
+            android:id="@+id/nav_artist"
+            android:title="Artist" />
+        <item
+            android:id="@+id/nav_genre"
+            android:title="Genre" />
+        <item
+            android:id="@+id/nav_playlist"
+            android:title="Playlist" />
+    </group>
+</menu>

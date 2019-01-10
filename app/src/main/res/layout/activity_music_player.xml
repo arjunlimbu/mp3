@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/music_player_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MusicPlayer">
+
+
+    <ImageView
+        android:id="@+id/AlbumCover"
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/songNameText"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Song Name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/albumNameText"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="Album Name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:alpha="100"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rewindBt"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/rewindbtn" />
+
+        <Button
+            android:id="@+id/playBt"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/playbtn" />
+
+        <Button
+            android:id="@+id/forwardBt"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/forwardbtn" />
+    </LinearLayout>
+
+</LinearLayout>

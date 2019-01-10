@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bijesh.mp3">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/musiclogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/musiclogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Lists.AlbumList" />
+        <activity android:name=".Lists.SongList">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Lists.PlaylistList" />
+        <activity android:name=".Lists.GenreList" />
+        <activity android:name=".Lists.ArtistList" />
+        <activity android:name=".MusicPlayer" />
+        <activity android:name=".Lists.PartialList"></activity>
+    </application>
+
+</manifest>
